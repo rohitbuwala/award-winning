@@ -101,10 +101,14 @@ const Navbar = () => {
     <div
       key={bar}
       className={`indicator-line ${isIndicatorActive ? "active" : ""}`}
-      style={{ animationDelay: `${bar * 0.1}s` }}
+      style={{  width: '4px', 
+        height: '16px', 
+        margin: '0 1px',
+        backgroundColor: isIndicatorActive ? '#00ff00' : '#ccc',
+        animationDelay: `${bar * 0.1}s`, }}
     />
   ))}
-</button>  
+</button>     
         </div>
       </nav>
     </header>
